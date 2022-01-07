@@ -17,6 +17,8 @@ By default, Sitecore provides rendering parameters as Key-Value pairs. In classi
 
 By default, Sitecore provides very few details in Layout service context. We wanted to have the URL of current page in Layout Service. So, we extended it as well. This can serve as a foundation for further optimizations need in Layout Service Context.
 
+![Alt text](../../../../../../screenshots/ExtendedLayoutServiceContext.png?raw=true "Optional Title")
+
 ## Route Data
 > Hackathon.Foundation.SitecoreExtensions.Transformer.CustomLayoutTransformer
 
