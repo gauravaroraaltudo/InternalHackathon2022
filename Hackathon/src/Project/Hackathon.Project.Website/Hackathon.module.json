@@ -1,0 +1,72 @@
+{
+  "namespace": "IQVIA.Project.DTPRewrite",
+  "items": {
+    "includes": [
+      {
+        "name": "languages",
+        "path": "/sitecore/system/Languages",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "api-key",
+        "path": "/sitecore/system/Settings/Services/API Keys",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+	  {
+        "name": "template-folder",
+        "path": "/sitecore/templates/Hackathon",
+        "scope": "singleItem",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "foundation-templates",
+        "path": "/sitecore/templates/Hackathon/Foundation",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "feature-templates",
+        "path": "/sitecore/templates/Hackathon/Feature",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "project-templates",
+        "path": "/sitecore/templates/Hackathon/Project",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+	  {
+        "name": "layouts",
+        "path": "/sitecore/layout/Layouts/Hackathon",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "renderings",
+        "path": "/sitecore/layout/Renderings/Hackathon",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "placeholders",
+        "path": "/sitecore/layout/Placeholder Settings/Hackathon",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+	  {
+        "name": "media",
+        "path": "/sitecore/media library/Hackathon",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "content-tenant",
+        "path": "/sitecore/content/Hackathon",
+        "scope": "singleItem"
+      },
+    ]
+  }
+}

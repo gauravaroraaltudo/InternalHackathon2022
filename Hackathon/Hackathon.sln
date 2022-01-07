@@ -4,6 +4,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{31ECC1C0-7BB8-4B66-8533-02A15B833947}"
+	ProjectSection(SolutionItems) = preProject
+		code-publish.ps1 = code-publish.ps1
+		login.ps1 = login.ps1
+		pull.ps1 = pull.ps1
+		push.ps1 = push.ps1
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{D7B2C1A7-4E04-4B1F-A6C5-C92649302042}"
 EndProject
@@ -19,6 +25,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SitecoreExtensions", "Sitec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon.Foundation.SitecoreExtensions", "src\Foundation\SitecoreExtensions\code\Hackathon.Foundation.SitecoreExtensions.csproj", "{5D9331C3-44E2-4058-85A3-7245015C929B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Breadcrumb", "Breadcrumb", "{5CA0892C-2AA2-40D8-B112-FE9CD29172B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon.Feature.Breadcrumb", "src\Feature\Breadcrumb\code\Hackathon.Feature.Breadcrumb.csproj", "{5E8C30AD-69F2-4634-9E18-08FCEF97AAF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +43,10 @@ Global
 		{5D9331C3-44E2-4058-85A3-7245015C929B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D9331C3-44E2-4058-85A3-7245015C929B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D9331C3-44E2-4058-85A3-7245015C929B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E8C30AD-69F2-4634-9E18-08FCEF97AAF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E8C30AD-69F2-4634-9E18-08FCEF97AAF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E8C30AD-69F2-4634-9E18-08FCEF97AAF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E8C30AD-69F2-4634-9E18-08FCEF97AAF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,9 +56,11 @@ Global
 		{64674916-F4A9-4BD8-AE5E-B48628C9E513} = {7685D8F7-DB6E-4C83-A6F9-7D8F013CC148}
 		{77C466E9-2CDC-4748-8F26-1C114B83E320} = {DA668701-73F7-4EB2-A63D-636204DB639D}
 		{5D9331C3-44E2-4058-85A3-7245015C929B} = {77C466E9-2CDC-4748-8F26-1C114B83E320}
+		{5CA0892C-2AA2-40D8-B112-FE9CD29172B6} = {D7B2C1A7-4E04-4B1F-A6C5-C92649302042}
+		{5E8C30AD-69F2-4634-9E18-08FCEF97AAF0} = {5CA0892C-2AA2-40D8-B112-FE9CD29172B6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 		SolutionGuid = {27ABD7AF-DCF2-4FF3-9319-AC54A2A4FFD4}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal
